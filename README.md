@@ -29,7 +29,7 @@ Edit New Relic Logs Azure Function's App Service Settings to ensure valid values
 
 - EVENT_HUB_CONNECTION_STRING
 
-- LICENSE_KEY
+- NR_LICENSE_KEY
 
 - NR_LOGGING_ENDPOINT
 
