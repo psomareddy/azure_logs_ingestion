@@ -17,11 +17,13 @@ To use New Relic Logs with the New Relic Logs Azure EventHub integration, ensure
 - Create `newrelic_logs_consumer_group` consumer group in the event hub for use by New Relic Logs Azure Function
 - Configure your Azure services to forward their logs to the Event Hub
 
-## Setup the New Relic Logs Azure Function 
+## Install the New Relic Logs Azure Function 
 
-Update the eventHubName for the `EventHubTrigger` attribute in the EventHubTrigger.cs file.
+Edit Constants.cs file and update the following properties
+- EVENT_HUB_NAME
+- CONSUMER_GROUP
 
-Deploy the function.
+Publish the function app.
 
 ## Configure the Azure Function
 
