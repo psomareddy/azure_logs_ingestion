@@ -19,7 +19,7 @@ namespace NewRelic.Azure
         }
 
         [FunctionName("LogConsumerFunc")]
-        public async Task Run([EventHubTrigger("first-event-hub", Connection = "EventHubConnectionString", ConsumerGroup = "newrelic_logs_consumer_group")] EventData[] events, ILogger log, ExecutionContext context)
+        public async Task Run([EventHubTrigger("first-event-hub", Connection = "EVENT_HUB_CONNECTION_STRING", ConsumerGroup = "newrelic_logs_consumer_group")] EventData[] events, ILogger log, ExecutionContext context)
         {
             var exceptions = new List<Exception>();
             Payload payload = new Payload();

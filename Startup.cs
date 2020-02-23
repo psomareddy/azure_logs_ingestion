@@ -15,7 +15,7 @@ namespace NewRelic.Azure
         {
             builder.Services.AddOptions<AppSettings>()
                 .Configure<IConfiguration>((settings, configuration) => {
-                    settings.LicenseKey = configuration.GetValue("LICENSE_KEY", "LICENSE_KEY");
+                    settings.LicenseKey = configuration.GetValue("NR_LICENSE_KEY", "NR_LICENSE_KEY");
                     settings.LoggingEndpoint = configuration.GetValue("NR_LOGGING_ENDPOINT", "NR_LOGGING_ENDPOINT");
                 });
 
